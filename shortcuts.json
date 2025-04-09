@@ -153,6 +153,11 @@
     "key": "space b o",
     "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
   },
+  {
+    "command": "workbench.action.closeAllEditors",
+    "key": "space b a",
+    "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
+  },
   // Git
   {
     "args": {
@@ -170,6 +175,11 @@
     },
     "key": "space e e",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+  },
+  {
+    "command": "list.collapseAll",
+    "key": "shift-z",
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
   },
   {
     "command": "renameFile",
